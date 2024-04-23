@@ -1,8 +1,11 @@
+:root{
+    --cor-de-fundo: #F5F5F5;
+    --cor-de-link: #000;
+}
 
 body {
-    
     box-sizing: border-box;
-    background-color: #fff ;
+    background-color: var(--cor-de-fundo) ;
     font-family: 'Times New Roman', Times, serif;
     margin: 0 auto;
     padding: 0;
@@ -14,12 +17,13 @@ ol, ul,li {
 }
 a{
     text-decoration: none;
+    color: var(--cor-de-link);
 }
 /*Sección Menu*/
 
 .menu {
     background-color:#ebeded ;
-    height: 3rem;
+    height: auto;
     width: 100%;
     display: flex;
     flex-direction: row;
@@ -188,6 +192,8 @@ flex-wrap: nowrap;
     align-items: center;
     width: 100%;
     margin-bottom: 2rem;
+
+
 }
 .hobbies__title{
     display: flex;
@@ -386,7 +392,7 @@ width: 100%;
 .formcontato__input, .formcontato__textarea {
     padding: 0.5rem;
     border: 2px solid cornflowerblue;
-    width: 95%;
+    width: 105%;
 }
 .formcontato__botao {
     display: flex;
@@ -435,8 +441,10 @@ img:hover {
 
 }
 
-@media (min-width: 834px) {
-    
+@media (min-width: 768px) {
+
+}
+
 @media (min-width: 425px) {
 
 }
